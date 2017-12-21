@@ -15,7 +15,7 @@ const makeSyncDecryptor = secretKey =>
         'Could not decrypt state. Please verify that you are using the correct secret key.'
       );
     }
-    return JSON.parse(decryptedString);
+    return decryptedString;
   });
 
 export default config => {
